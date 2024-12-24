@@ -1,0 +1,207 @@
+/* ESTRUTURA DO SITE */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--branco) url(../imagens/bg.png);
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+
+/* CONTAINER */
+#container {
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;
+    background-color: var(--amarelo-2);
+}
+
+
+/* TOPO */
+#topo {
+    position: relative;
+    height: 15.4em;
+    min-height: 250px;
+    background-color: var(--amarelo-3);
+}
+
+
+/* ÁREA LOGO */
+#area-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 250px;
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+}
+
+#area-logo .logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    width: 151px;
+    height: 66px;
+    font-size: 0;
+    background: url(../imagens/logo.png) no-repeat;
+}
+
+
+/* ÁREA MENU */
+#area-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 450px;
+    height: 250px;
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+}
+
+#conteudo-menu {
+    margin: 15px 15px 0 90px;
+}
+
+#menu-locais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-top: 1px solid var(--amarelo-4);
+    border-bottom: 1px solid var(--amarelo-4);
+    font-size: 0.7em;
+}
+
+#menu-locais .locais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid var(--vermelho-1); */
+}
+
+#menu-locais .reserva {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: var(--amarelo-6);
+    background-color: var(--amarelo-7);
+}
+
+#menu-locais a {
+    color: var(--amarelo-5);
+}
+
+#menu-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin-top: 15px;
+}
+
+#menu-principal .navegacao a {
+    display: inline;
+    padding: 5px 5px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--amarelo-8);
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+#menu-principal .navegacao a:hover {
+    background-color: var(--amarelo-9);
+}
+
+#menu-principal img {
+    width: 60%;
+    opacity: 0.5;
+}
+
+
+/* ÁREA CONTEUDO */
+#area-conteudo {
+    display: flex;
+    flex-direction: row;
+    background: url(../imagens/bg-container.png) repeat-y center top;
+}
+
+#area-principal, 
+#area-lateral {
+    padding: 25px 20px 20px;
+    width: 50%;
+}
+
+
+/* ÁREA PRINCIPAL */
+#area-principal {
+    background: url(../imagens/bg-area-principal.png) repeat-x top left;
+}
+
+#area-principal h2 {
+    padding-bottom: 10px;
+    color: var(--amarelo-10);
+    font-size: 1.1em;
+}
+
+#area-principal p:not(p:last-child) {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+
+/* ÁREA LATERAL */
+#area-lateral {
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+}
+
+#area-lateral .beneficios li {
+    padding: 8px;
+    height: 6em;
+    border-bottom: 1px solid var(--amarelo-11);
+}
+
+#area-lateral .beneficios li:hover {
+    cursor: pointer;
+    background-color: var(--amarelo-13);
+}
+
+#area-lateral .beneficios li a h3 {
+    padding: 5px 0;
+    color: var(--amarelo-12);
+    font-size: 1em;
+    background: url(../imagens/ornamento.png) no-repeat center right;
+}
+
+#area-lateral .beneficios li a p {
+    font-size: 0.8em;
+}
+
+#area-lateral .beneficios a img {
+    float: left;
+    margin-right: 8px;
+    width: 150px;
+}
+
+
+/* RODAPÉ */
+#rodape {
+    padding: 16px;
+    color: var(--amarelo-10);
+    background: var(--branco) url(../imagens/bg-rodape.png) repeat-x top;
+}
+
+
+/* RESETS */
+.clear-both { clear: both; }

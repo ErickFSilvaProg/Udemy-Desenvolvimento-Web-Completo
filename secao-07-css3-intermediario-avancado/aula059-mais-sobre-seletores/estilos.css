@@ -1,0 +1,63 @@
+/* ****** SELETORES ****** */
+
+/* Seletor universal */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Segoe UI';
+}
+
+
+/* Seletor de texto */
+h1 {
+    font-size: 2.8em;
+}
+
+
+/* Seletor de ID */
+#container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+#area-menu {
+    margin: 15px 0;
+}
+
+
+/* Seletor de classe */
+.subtitulo {
+    font-size: 1.2em;
+}
+
+
+/* Seletor de descendente */
+li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: brown;
+}
+
+
+/* Seletor de filho */
+li>a {
+    color: #6d288d;
+}
+
+
+/* Seletor de irmão adjacente */
+a+ul {
+    border: 1px dotted #6d288d;
+}
+
+
+/* Seletor de irmão geral */
+a~ul {
+    margin: 5px 20px;
+    padding: 5px 10px;
+    background-color: antiquewhite;
+}

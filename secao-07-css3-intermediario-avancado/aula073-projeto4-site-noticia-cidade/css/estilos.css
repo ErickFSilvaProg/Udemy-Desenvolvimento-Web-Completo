@@ -1,0 +1,254 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+/* .menu ul li a::after {
+    content: '';
+} */
+
+
+/* CONTAINER */
+#container {
+    margin: 0 auto;
+    width: 750px;
+}
+
+
+/* TOPO */
+#topo {
+    padding-top: 25px;
+    height: 175px;
+    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    font-size: 0;
+    background: url(../imagens/logo.png) no-repeat center;
+}
+
+
+/* BARRA DE NAVEGAÇÃO */
+#topo ul {
+    float: left;
+    margin-top: 30px;
+    background-color: var(--primeiro-vermelho);
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    padding: 0.5em 1.5em;
+    display: block;
+    line-height: 2.1em;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #fafafa;
+    background: url(imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul a.primeiro {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navagacao a.home,
+body.brasil #navagacao a.brasil,
+body.internacional #navagacao a.internacional,
+body.economia #navagacao a.economia,
+body.saude #navagacao a.saude,
+body.ciencia #navagacao a.ciencia,
+body.fotos #navagacao a.fotos {
+    cursor: text;
+    color: #fafafa;
+    background-color: var(--terceiro-vermelho);
+}
+
+
+/* CONTEÚDO - LAYOUT */
+#conteudo {
+    margin: 70px 0 0;
+}
+
+
+/* LATERAL */
+#lateral {
+    width: 180px;
+}
+
+
+/* CAIXA */
+.caixa {
+    margin-bottom: 10px;
+    padding: 5px;
+    background: var(--segundo-cinza) url(../imagens/fundo-caixa.png);
+}
+
+.caixa h2 {
+    padding: 5px;
+    font-size: 1.1em;
+    color: var(--branco);
+    background-color: var(--primeiro-azul);
+}
+
+.caixa .caixa-conteudo {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--branco);
+}
+
+.caixa .caixa-conteudo h3:first-child {
+    padding: 3px;
+    display: inline;
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 0.8em;
+    background-color: var(--primeiro-vermelho);
+}
+
+.caixa .caixa-conteudo h3.entrevista {
+    color: var(--preto);
+    background-color: var(--quinto-vermelho);
+}
+
+.caixa .caixa-conteudo img:not(.caixa .caixa-conteudo ul img) {
+    margin: 6px 0;
+    width: 100%;
+    display: block;
+    border: 3px solid var(--sexto-cinza);
+}
+
+
+/* MENUS LATERAIS */
+#lateral ul a {
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid var(--segundo-cinza);
+    color: var(--preto);
+}
+
+#lateral ul a:hover {
+    padding-left: 20px;
+    color: var(--terceiro-cinza);
+    background: var(--quarto-cinza) url(../imagens/marcador.png) no-repeat left center;
+}
+
+#lateral label {
+    display: block;
+    cursor: pointer;
+}
+
+#lateral input[type="email"] {
+    margin: 5px 0;
+    padding: 3px;
+    width: 100%;
+    border: 1px solid var(--primeiro-cinza);
+    color: var(--quinto-cinza);
+    font-size: 0.9em;
+    background-color: var(--branco);
+}
+
+#lateral input[type="submit"] {
+    padding: 3px;
+    width: 100%;
+    border: 2px solid var(--quarto-vermelho);
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--primeiro-vermelho);
+}
+
+
+/* LAYOUT TRÊS COLUNAS - PRIMÁRIO */
+#primario {
+    width: 270px;
+}
+
+/* LAYOUT DUAS COLUNAS - PRIMÁRIO */
+#duas-colunas #primario {
+    width: 555px;
+}
+
+/* LAYOUT UMA COLUNA - PRIMÁRIO */
+#uma-colunas #primario {
+    width: 750px;
+}
+
+#uma-colunas #primario .caixa-conteudo p:not(p:last-child) {
+    margin-bottom: 10px;
+}
+
+
+/* COLUNA SECUNDÁRIA */
+#secundario {
+    width: 270px;
+}
+
+
+/* LISTA NOTÍCIAS */
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid var(--setimo-cinza);
+}
+
+#lista-noticias li:hover {
+    cursor: pointer;
+    background-color: var(--oitavo-cinza);
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+    width: 80px;
+}
+
+#lista-noticias li a h3 {
+    color: var(--terceiro-azul);
+    font-size: 0.8em;
+}
+
+#lista-noticias li a p {
+    font-size: 0.7em;
+}
+
+
+/* RODAPÉ */
+#container-rodape {
+    padding: 20px 0;
+    background-color: var(--primeiro-azul);
+}
+
+#rodape {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 750px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* ESPECÍFICOS */
+.clear-both { clear: both; }
+.float-left { float: left; }
+.float-right { float: right; }
+.margin-right-15 {margin-right: 15px; }
